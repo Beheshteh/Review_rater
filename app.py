@@ -10,8 +10,6 @@ import Hee_final
 import test
 from flask import Flask, jsonify, render_template, request
 
-
-
 # Flask App
 app = Flask(__name__)
 
@@ -42,10 +40,6 @@ Base.metadata.create_all(engine)
 
 session = Session(bind=engine)
 
-
-
-
-
 @app.route("/", methods=["GET", "POST"])
 def index():
     s = ""
@@ -71,6 +65,8 @@ def data():
 
 @app.route("/methodology/")
 def methodology():
+    return render_template("methodology.html")
+
     return render_template("Method.html")
 
 @app.route("/home/")

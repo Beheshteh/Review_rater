@@ -31,10 +31,9 @@ h1 {
   padding: 20px 0;
   margin: 0;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
-  text-align: left;
-  border-bottom:1px solid #FCFCFC; 
+  text-align: center;
   width:80%;
 }
 
@@ -44,31 +43,24 @@ h3 {
   text-align: left;
 }
 
-h4 {
-  background: linear-gradient(to right, #CE0909 20%, #FFF 20%) bottom .5em left .8em no-repeat, linear-gradient(#323A45, #323A45);
-  background-size: 200% 1px, 100% 100%;
-  padding: .5em;
-  color: #FDFFFE;
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: lighter;
+h5 {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
 }
 
-
 a {
-  color: white; 
+  color: #333; 
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   text-align: center;
 }
 
+
 button {
-  background-color: #8B0F0F;
+  background-color: powderblue;
 }
 
-.data {
-  color: #8B0F0F;
-}
 /* Selecting elements by class */
 .container {
   margin: 0 auto;
@@ -89,47 +81,51 @@ button {
 
 #mainpicture {
   float:center;
-  height: 300px;
-  width: 80%;
+  height: 250px;
+  width: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
-}
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
 }
 
 #datapicture {
   float:center;
-  height: 400px;
-  width: 80%;
+  height: 170px;
+  width: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
 
-
-/* Adding media queries to show the drop-down, and hide the navbar when the screen
- is smaller than 480 pixels */
-
-@media (max-width: 1023px) {
-  .navbar li {
-    padding: 10px;
-  }
-
-  .post {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-  .navbar ul {
-    visibility: hidden;
-  }
-
-  #nav-select {
-    visibility: visible;
-  }
-
-  
-  
+.form-control {
+  width: 60%;
 }
+
+.form-control-rating {
+  width:20%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-left: 20px;
+  width: 100%;
+  }
+
+  th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+  font: 16px;
+  background-color: lightslategrey;
+
+  }
+
+  td{
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+  }
+
+  tr:nth-child(even) {
+  background-color: #dddddd;
+  }

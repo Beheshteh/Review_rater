@@ -6,116 +6,23 @@
   <title>Yelp Review Analysis</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <link rel="stylesheet" href="../static/css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-   
+    
 </head>
 
-<style>
-    /* Styling for HTML elements */
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background: #efeee7;
-  }
-  
-  header {
-    background: #333;
-  }
-  
-  p {
-    padding: 1%;
-    margin: 2%;
-    font-family: sans-serif;    /*Georgia, "Times New Roman", Times, serif; */
-    font-size: 16px;
-    line-height: 150%;
-    color: #333;
-    text-align: left;
-  }
-  
-  h1 {
-    padding: 20px 0;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #333;
-    text-align: center;
-    width:80%;
-  }
-  
-  h3 {
-    font-size: 18px;
-    color: #333;
-    text-align: left;
-  }
-
-  h5 {
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-  }
-  
-  a {
-    color: #333; 
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  button {
-    background-color: powderblue;
-  }
-  
-  /* Selecting elements by class */
-  .container {
-    margin: 0 auto;
-   /* position: relative;*/
-    text-align: center;
-  }
-  
-  .navbar {
-    padding: 0px;
-    background: #333; /*#FCFCFC*/
-  }
-  
-  /* Getting rid of the default link styles here */
-  .navbar li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  #mainpicture {
-    float:center;
-    height: 250px;
-    width: 100%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-
-  
-  .form-control {
-    width: 60%;
-}
-
-.form-control-rating {
-    width:20%;
-}
-  </style>
 <body>
   <!--Navbar-->
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <button class="navbar-header"><a href="/home">Home</a></button>
+      <button class="navbar-header" ><a href="/">Home</a></button>
       
       <div class="btn-group navbar-right">
-          <button class="navbar-header"><a href="/Method">Methodology</a></button>
-          <button class="navbar-header"><a href="/data">Data</a></button>   
+          <button class="navbar-header" ><a href="/methodology">Methodology</a></button>
+          <button class="navbar-header" ><a href="/data">Data</a></button>   
           
       </div>  
     </div><!-- /.container-fluid -->
@@ -138,9 +45,10 @@
             </span> -->
         </div>
         <div align = "left">
+            
         <input class="form-control-rating" type = "number" name ="humanRating" placeholder="Your review (1-5)">
         <span class="input-group-btn">
-             <button id="submit" type="submit" class="btn"><a>Submit</a></button>
+             <button id="submit"  type="submit" class="btn"><a>Submit</a></button>
          </span>
          </div>
     </form>
